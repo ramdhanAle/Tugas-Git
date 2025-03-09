@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website dengan Iframe</title>
+    <style>
+        body {
+            display: flex; /* Menggunakan flexbox untuk tata letak */
+        }
+        nav {
+            width: 200px; /* Lebar area navigasi */
+            background-color: #4CAF50; /* Warna latar belakang */
+            padding: 10px; /* Ruang dalam */
+        }
+        iframe {
+            flex: 1; /* Membuat iframe mengisi sisa ruang */
+            border: none; /* Menghapus border */
+            height: 100vh; /* Tinggi penuh viewport */
+        }
+    </style>
+</head>
+<body class="body1">
+    <nav>
+        <h2>Menu Navigasi</h2>
+        <ul>
+            <li><a href="home.html" target="mainContent">Home</a></li>
+            <li><a href="study.html" target="mainContent">MyStudy</a></li>
+            <li><a href="left.html" target="mainContent">Link Sosmed</a></li>
+        </ul>
+    </nav>
+    <iframe name="mainContent" src="home.html"></iframe>
+</body>
+</html>
