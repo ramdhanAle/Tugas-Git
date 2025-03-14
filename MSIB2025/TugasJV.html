@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Luas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* font */
+            margin: 20px; /* Jarak luar */
+        }
+        h1 {
+            text-align: center; /* Mengatur teks menjadi tengah */
+        }
+        #hasil {
+            margin-top: 20px; /* Jarak atas */
+            padding: 10px; /* Ruang dalam */
+            border: 1px solid #ccc; /* Batasan */
+            border-radius: 5px; /* Sudut membulat */
+            display: inline-block; /* hasil menjadi inline-block */
+        }
+    </style>
+</head>
+<body>
+    <h1>Penghitungan Luas</h1>
+    <div id="hasil"></div> <!-- Elemen menampilkan hasil -->
+
+    <script>
+        // menghitung luas persegi panjang
+        function luasPersegiPanjang(panjang, lebar) {
+            return panjang * lebar; // Menghitung luas
+        }
+
+        // menghitung luas bujur sangkar
+        function luasBujurSangkar(sisi) {
+            return sisi * sisi; // Menghitung luas
+        }
+
+        // menghitung luas segitiga
+        function luasSegitiga(panjang, tinggi) {
+            return 0.5 * panjang * tinggi; // Menghitung luas
+        }
+
+        // penggunaan fungsi
+        const panjang = 20; // Panjang persegi panjang
+        const lebar = 50;    // Lebar persegi panjang
+        const sisi = 10;     // Sisi bujur sangkar
+        const tinggi = 60;   // Tinggi segitiga
+
+        // Menampilkan hasil
+        const hasilDiv = document.getElementById('hasil'); // Mengambil elemen hasil
+        hasilDiv.innerHTML = `
+            <p>Luas Persegi Panjang: ${luasPersegiPanjang(panjang, lebar)}</p>
+            <p>Luas Bujur Sangkar: ${luasBujurSangkar(sisi)}</p>
+            <p>Luas Segitiga: ${luasSegitiga(panjang, tinggi)}</p>
+        `;
+    </script>
+</body>
+</html>
